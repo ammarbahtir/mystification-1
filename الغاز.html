@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ألغاز تفاعلية</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            background-color: #f3f4f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #0078d4;
+            color: white;
+            padding: 15px 0;
+        }
+        main {
+            padding: 20px;
+        }
+        .riddle {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #0078d4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        button:hover {
+            background-color: #005fa3;
+        }
+        footer {
+            margin-top: 20px;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>مرحبًا بك في صفحة الألغاز التفاعلية!</h1>
+    </header>
+    <main>
+        <h2>اختر لغزًا لتكتشف الإجابة</h2>
+
+        <!-- لغز 1 -->
+        <div class="riddle">
+            <h3>اللغز الأول:</h3>
+            <p>ما هو الشيء الذي يمشي بلا قدمين، يدخل الأذن ولا يُسمع؟</p>
+            <button onclick="showAnswer('answer1')">عرض الإجابة</button>
+            <p id="answer1" style="color: green; font-weight: bold; display: none;">الإجابة: الصوت.</p>
+        </div>
+
+        <!-- لغز 2 -->
+        <div class="riddle">
+            <h3>اللغز الثاني:</h3>
+            <p>ما هو الشيء الذي كلما أخذت منه كبر؟</p>
+            <button onclick="showAnswer('answer2')">عرض الإجابة</button>
+            <p id="answer2" style="color: green; font-weight: bold; display: none;">الإجابة: الحفرة.</p>
+        </div>
+
+        <!-- لغز 3 -->
+        <div class="riddle">
+            <h3>اللغز الثالث:</h3>
+            <p>ما هو البيت الذي لا يحتوي على أبواب أو نوافذ؟</p>
+            <button onclick="showAnswer('answer3')">عرض الإجابة</button>
+            <p id="answer3" style="color: green; font-weight: bold; display: none;">الإجابة: بيت الشعر.</p>
+        </div>
+
+        <!-- لغز 4 -->
+        <div class="riddle">
+            <h3>اللغز الرابع:</h3>
+            <p>رجل كان بالخارج تحت المطر ولم يبتل شعره. لماذا؟</p>
+            <button onclick="showAnswer('answer4')">عرض الإجابة</button>
+            <p id="answer4" style="color: green; font-weight: bold; display: none;">الإجابة: لأنه أصلع.</p>
+        </div>
+
+        <!-- لغز 5 -->
+        <div class="riddle">
+            <h3>اللغز الخامس:</h3>
+            <p>ما هو الشيء الذي كلما زاد نقص؟</p>
+            <button onclick="showAnswer('answer5')">عرض الإجابة</button>
+            <p id="answer5" style="color: green; font-weight: bold; display: none;">الإجابة: العمر.</p>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 - جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+        function showAnswer(id) {
+            document.getElementById(id).style.display = "block";
+        }
+    </script>
+</body>
+</html>
+
